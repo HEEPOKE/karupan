@@ -31,7 +31,7 @@
                                 <tr>
                                     <td><?php echo $i; ?></td>
                                     <td><?php echo $rowHistory["itemscode"]; ?></td>
-                                    <td><?php echo $rowHistory["name"]; ?></td>
+                                    <td><?php echo $rowHistory["packagename"]; ?></td>
                                     <td><?php echo $rowHistory["name"] . '  ' . $rowHistory["lastname"]; ?></td>
                                     <td><?php echo $rowHistory["date"]; ?></td>
                                     <td><?php echo $rowHistory["number"]; ?></td>
