@@ -1,7 +1,8 @@
 <section class="content">
     <div class="container-fluid">
+
         <div class="card">
-            <div class="card-header">
+            <div class="card-header bg-secondary">
                 <h3 class="card-title">ประวัติการเบิก/ยืมวัสดุ-ครุภัณฑ์</h3>
             </div>
             <div class="card-body">
@@ -17,6 +18,7 @@
                             <th>สถานะ</th>
                             <th>ราคา</th>
                             <th>หมายเหตุ</th>
+                            <th>คืนวัสดุ-ครุภัณฑ์</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -28,7 +30,7 @@
                             $i = 1;
                             while ($rowHistory = $resultHistory->fetch_assoc()) {
                         ?>
-                                <tr>
+                                <tr class="text-center">
                                     <td><?php echo $i; ?></td>
                                     <td><?php echo $rowHistory["itemscode"]; ?></td>
                                     <td><?php echo $rowHistory["packagename"]; ?></td>
@@ -38,6 +40,11 @@
                                     <td><?php echo $rowHistory["status"]; ?></td>
                                     <td><?php echo $rowHistory["price"]; ?></td>
                                     <td><?php echo $rowHistory["note"]; ?></td>
+                                    <td>
+                                        <a href="pages/returnPackageService.php?id=<?php echo $rowHistory["id"]; ?>" class="btn btn-primary">
+                                            คืนวัสดุ-ครุภัณฑ์
+                                        </a>
+                                    </td>
                                 </tr>
                         <?php
                             }
@@ -45,7 +52,6 @@
                             echo '<tr><td colspan="9">ไม่มีประวัติการเบิก/ยืม</td></tr>';
                         }
                         ?>
-
                     </tbody>
                 </table>
             </div>

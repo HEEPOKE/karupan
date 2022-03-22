@@ -27,7 +27,17 @@ $type = $_SESSION['type'];
 
         <div class="content-wrapper">
             <?php include 'components/Header.php'; ?>
-            <?php include 'pages/giveMe.php'; ?>
+            <?php
+            $page = isset($_GET['page']) ? $_GET['page'] : 'home';
+            switch ($page) {
+                case 'home':
+                    include 'pages/giveMe.php';
+                    break;
+                case 'add':
+                    include 'pages/addPackage.php';
+                    break;
+            }
+            ?>
         </div>
         <?php include 'components/Footer.php'; ?>
 

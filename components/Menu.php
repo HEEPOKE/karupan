@@ -14,7 +14,7 @@
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="?page=home" class="nav-link">
                         <img src="<?php echo $homepage; ?>" alt="" srcset="" width="30" height="30">
                         <p>
                             &emsp;หน้าแรก
@@ -22,7 +22,15 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="?page=add" class="nav-link">
+                        <img src="<?php echo $package; ?>" alt="" srcset="" width="30" height="30">
+                        <p>
+                            &emsp;จัดการวัสดุ-ครุภัณฑ์
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="?page=add" class="nav-link">
                         <img src="<?php echo $package; ?>" alt="" srcset="" width="30" height="30">
                         <p>
                             &emsp;เบิก
