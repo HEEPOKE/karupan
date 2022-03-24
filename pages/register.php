@@ -18,7 +18,7 @@ session_destroy();
 
 </head>
 
-<body class="img js-fullheight" style="background-image: url(../assets/image/bg.jpg);">
+<body class="img js-fullheight" style="background-image: url(../assets/image/bg1.jpg);">
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
@@ -59,6 +59,9 @@ session_destroy();
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="form-control btn btn-primary submit px-3">Register</button>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" onclick="history.back();" class="form-control btn btn-primary submit px-3">Back</button>
                             </div>
                         </form>
                     </div>

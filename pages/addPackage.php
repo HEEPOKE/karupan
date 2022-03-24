@@ -13,20 +13,24 @@
                 <form>
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">รหัสวัสดุ</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            <label for="exampleInputEmail1">รหัสวัสดุ-ครุภัณฑ์</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="กรอกรหัสวัส-ครุภัณฑ์">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">ชื่อวัสดุ-ครุภัณฑ์</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="กรอกชื่อวัสดุ-ครุภัณฑ์">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">จำนวน</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="กรอกจำนวนวัสดุ-ครุภัณฑ์">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">ราคา</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="กรอกราคาวัสดุ-ครุภัณฑ์">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">หมายเหตุ</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="กรอกหมายเหตุ">
                         </div>
                     </div>
                     <div class="text-center">
