@@ -21,14 +21,16 @@
                         </p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="?page=add" class="nav-link">
-                        <img src="<?php echo $package; ?>" alt="" srcset="" width="30" height="30">
-                        <p>
-                            &emsp;จัดการวัสดุ-ครุภัณฑ์
-                        </p>
-                    </a>
-                </li>
+                <?php if ($type == "admin") { ?>
+                    <li class="nav-item">
+                        <a href="?page=add" class="nav-link">
+                            <img src="<?php echo $package; ?>" alt="" srcset="" width="30" height="30">
+                            <p>
+                                &emsp;จัดการวัสดุ-ครุภัณฑ์
+                            </p>
+                        </a>
+                    </li>
+                <?php } ?>
                 <li class="nav-item">
                     <a href="?page=add" class="nav-link">
                         <img src="<?php echo $package; ?>" alt="" srcset="" width="30" height="30">
