@@ -6,7 +6,7 @@
                 <h3 class="card-title">ประวัติการเบิก/ยืมวัสดุ-ครุภัณฑ์</h3>
             </div>
             <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
+                <table id="historytwo" class="table table-bordered table-striped">
                     <thead>
                         <tr>
                             <th>ลำดับ</th>

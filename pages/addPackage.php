@@ -13,24 +13,24 @@
                 <form>
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">รหัสวัสดุ-ครุภัณฑ์</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="กรอกรหัสวัส-ครุภัณฑ์">
+                            <label for="idpackage">รหัสวัสดุ-ครุภัณฑ์</label>
+                            <input type="text" class="form-control" id="idpackage" placeholder="กรอกรหัสวัส-ครุภัณฑ์">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">ชื่อวัสดุ-ครุภัณฑ์</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="กรอกชื่อวัสดุ-ครุภัณฑ์">
+                            <label for="packagename">ชื่อวัสดุ-ครุภัณฑ์</label>
+                            <input type="text" class="form-control" id="packagename" placeholder="กรอกชื่อวัสดุ-ครุภัณฑ์">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">จำนวน</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="กรอกจำนวนวัสดุ-ครุภัณฑ์">
+                            <label for="number">จำนวน</label>
+                            <input type="number" class="form-control" id="number" placeholder="กรอกจำนวนวัสดุ-ครุภัณฑ์">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">ราคา</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="กรอกราคาวัสดุ-ครุภัณฑ์">
+                            <label for="price">ราคา</label>
+                            <input type="text" class="form-control" id="price" placeholder="กรอกราคาวัสดุ-ครุภัณฑ์">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">หมายเหตุ</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="กรอกหมายเหตุ">
+                            <label for="note">หมายเหตุ</label>
+                            <input type="text" class="form-control" id="note" placeholder="กรอกหมายเหตุ">
                         </div>
                     </div>
                     <div class="text-center">
