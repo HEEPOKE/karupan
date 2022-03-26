@@ -12,15 +12,13 @@ $sql = "UPDATE `account`
 SET `name`='$name',
 `lastname`='$lastname',
 `idstudent`='$idstudent',
-`username`='$username',
-`password`='$password',
 `email`='$email',
 `tel`='$tel' 
 WHERE `username`='" . $_SESSION["usernames"] . "' AND password='" . $_SESSION["passwords"] . "'";
 
 
 if ($conn->query($sql) === TRUE) {
-    echo "Successfully";
+    header('location: ../?page=profile');
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

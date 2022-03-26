@@ -21,6 +21,7 @@ $passwords = $_SESSION['passwords'];
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
+    <?php include 'components/Modals.php'; ?>
     <div class="wrapper">
 
         <?php include 'components/Loading.php'; ?>

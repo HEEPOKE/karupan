@@ -5,7 +5,7 @@
             <div class="card-header bg-secondary">
                 <h3 class="card-title">ประวัติการเบิก/ยืมวัสดุ-ครุภัณฑ์</h3>
             </div>
-            <div class="card-body">
+            <div class="card-body text-center">
                 <table id="historytwo" class="table table-bordered table-striped">
                     <thead>
                         <tr>
@@ -18,13 +18,18 @@
                             <th>สถานะ</th>
                             <th>ราคา</th>
                             <th>หมายเหตุ</th>
-                            <th>คืนวัสดุ-ครุภัณฑ์</th>
+                            <?php if ($type != "admin") { ?>
+                                <th>คืนวัสดุ-ครุภัณฑ์</th>
+                            <?php } ?>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                        $queryHistory = "SELECT * FROM items 
-                        WHERE name = '" . $_SESSION["name"] . "' AND lastname = '" . $_SESSION["lastname"] . "'";
+                        $where = "";
+                        if ($type != "admin") {
+                            $where = "WHERE name = '" . $_SESSION["name"] . "' AND lastname = '" . $_SESSION["lastname"] . "'";
+                        }
+                        $queryHistory = "SELECT * FROM items " .  $where;
                         $resultHistory = $conn->query($queryHistory);
                         if ($resultHistory->num_rows > 0) {
                             $i = 1;
@@ -40,13 +45,18 @@
                                     <td><?php echo $rowHistory["status"]; ?></td>
                                     <td><?php echo $rowHistory["price"]; ?></td>
                                     <td><?php echo $rowHistory["note"]; ?></td>
-                                    <td>
-                                        <a href="pages/returnPackageService.php?id=<?php echo $rowHistory["id"]; ?>" class="btn btn-primary">
-                                            คืนวัสดุ-ครุภัณฑ์
-                                        </a>
-                                    </td>
+                                    <?php if ($type != "admin") { ?>
+                                        <td>
+                                            <a href="pages/returnPackageService.php?id=<?php echo $rowHistory["id"]; ?>" class="btn btn-primary">
+                                                คืนวัสดุ-ครุภัณฑ์
+                                            </a>
+                                        </td>
+                                    <?php
+
+                                    } ?>
                                 </tr>
                         <?php
+                                $i++;
                             }
                         } else {
                             echo '<tr><td colspan="10">ไม่มีประวัติการเบิก/ยืม</td></tr>';
