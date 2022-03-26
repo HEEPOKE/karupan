@@ -33,3 +33,27 @@
         </div>
     </div>
 </div>
+
+
+<div class="modal fade" id="modal-default-delete">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="services/deletePackageService.php" method="POST">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="title-modal-delete"></h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>ต้องการที่จะลบรายการ?</p>
+                    <input type="text" style="display: none" name="hidden-namepackage" id="hidden-namepackage-delete">
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="submit" class="btn btn-success col-3">ยืนยัน</button>
+                    <button type="button" class="btn btn-danger col-3" data-dismiss="modal">ยกเลิก</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

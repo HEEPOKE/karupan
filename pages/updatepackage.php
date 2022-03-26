@@ -10,27 +10,27 @@
                 </div>
             </div>
             <div class="card-body">
-                <form>
+                <form action="services/packageService.php" method="POST">
                     <div class="card-body">
                         <div class="form-group">
                             <label for="idpackage">รหัสวัสดุ-ครุภัณฑ์</label>
-                            <input type="text" class="form-control" id="idpackage" placeholder="กรอกรหัสวัส-ครุภัณฑ์">
+                            <input type="text" class="form-control" name="idpackage" id="idpackage" placeholder="กรอกรหัสวัส-ครุภัณฑ์" required>
                         </div>
                         <div class="form-group">
                             <label for="packagename">ชื่อวัสดุ-ครุภัณฑ์</label>
-                            <input type="text" class="form-control" id="packagename" placeholder="กรอกชื่อวัสดุ-ครุภัณฑ์">
+                            <input type="text" class="form-control" name="packagename" id="packagenames" placeholder="กรอกชื่อวัสดุ-ครุภัณฑ์" required>
                         </div>
                         <div class="form-group">
                             <label for="number">จำนวน</label>
-                            <input type="number" class="form-control" id="number" placeholder="กรอกจำนวนวัสดุ-ครุภัณฑ์">
+                            <input type="number" class="form-control" name="number" id="numbers" placeholder="กรอกจำนวนวัสดุ-ครุภัณฑ์" required>
                         </div>
                         <div class="form-group">
                             <label for="price">ราคา</label>
-                            <input type="text" class="form-control" id="price" placeholder="กรอกราคาวัสดุ-ครุภัณฑ์">
+                            <input type="text" class="form-control" name="price" id="prices" placeholder="กรอกราคาวัสดุ-ครุภัณฑ์" required>
                         </div>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="btn btn-secondary col-6">เพิ่ม</button>
+                        <button type="submit" class="btn btn-secondary col-6">บันทึก</button>
                     </div>
                 </form>
             </div>
@@ -63,24 +63,32 @@
                                     <td><?php echo $i; ?></td>
                                     <td><?php echo $rowHistory["idpackage"]; ?></td>
                                     <td><?php echo $rowHistory["packagename1"]; ?></td>
-                                    <td><?php echo $rowHistory["price"]; ?></td>
                                     <td><?php echo $rowHistory["number"]; ?></td>
+                                    <td><?php echo $rowHistory["price"]; ?></td>
                                     <td>
-                                        <a href="pages/returnPackageService.php?id=<?php echo $rowHistory["idpackage"]; ?>" class="btn btn-primary">
+                                        <a onclick="editPackage<?php echo $i; ?>(`<?php echo $rowHistory['idpackage']; ?>`)" class="btn btn-primary">
                                             เเก้ไขวัสดุ-ครุภัณฑ์
                                         </a>
-                                        <a href="pages/returnPackageService.php?id=<?php echo $rowHistory["idpackage"]; ?>" class="btn btn-danger">
+                                        <a onclick="deletePackage(`<?php echo $rowHistory['idpackage']; ?>`)" class="btn btn-danger" data-target="#modal-default-delete" data-toggle="modal">
                                             ลบ
                                         </a>
                                     </td>
                                 </tr>
+                                <script>
+                                    function editPackage<?php echo $i; ?>() {
+                                        document.getElementById("idpackage").value = '<?php echo $rowHistory["idpackage"]; ?>';
+                                        document.getElementById("packagenames").value = '<?php echo $rowHistory["packagename1"]; ?>';
+                                        document.getElementById("numbers").value = '<?php echo $rowHistory["price"]; ?>';
+                                        document.getElementById("prices").value = '<?php echo $rowHistory["number"]; ?>';
+                                    }
+                                </script>
                         <?php
+                                $i++;
                             }
                         } else {
                             echo '<tr><td colspan="9">ไม่มีประวัติการเบิก/ยืม</td></tr>';
                         }
                         ?>
-
                     </tbody>
                 </table>
             </div>
