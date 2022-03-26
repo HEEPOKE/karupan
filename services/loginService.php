@@ -9,6 +9,8 @@ if ($result->num_rows > 0) {
     $_SESSION['login'] = true;
     $_SESSION['type'] = $row['type'];
     $_SESSION['name'] = $row['name'];
+    $_SESSION["usernames"] = $row['username'];
+    $_SESSION["passwords"] = $row['password'];
     $_SESSION['lastname'] = $row['lastname'];
     header('Location: ../');
 } else {

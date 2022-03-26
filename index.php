@@ -6,6 +6,8 @@ if (!isset($_SESSION['login'])) {
 require('assets/icons/icon.php');
 require('database/clinet.php');
 $type = $_SESSION['type'];
+$usernames = $_SESSION['usernames'];
+$passwords = $_SESSION['passwords'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,6 +40,9 @@ $type = $_SESSION['type'];
                     break;
                 case 'update':
                     include 'pages/updatepackage.php';
+                    break;
+                case 'profile':
+                    include 'pages/profile.php';
                     break;
             }
             ?>

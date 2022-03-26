@@ -6,7 +6,7 @@
                 <img src="<?php echo $person; ?>" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block"><?php echo $type; ?></a>
+                <a href="?page=profile" class="nav-link"><?php echo $type; ?></a>
             </div>
         </div>
         <nav class="mt-2">
