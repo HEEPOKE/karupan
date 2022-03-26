@@ -49,7 +49,7 @@
                         <?php
                             }
                         } else {
-                            echo '<tr><td colspan="9">ไม่มีประวัติการเบิก/ยืม</td></tr>';
+                            echo '<tr><td colspan="10">ไม่มีประวัติการเบิก/ยืม</td></tr>';
                         }
                         ?>
                     </tbody>

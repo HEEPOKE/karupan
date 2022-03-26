@@ -9,8 +9,6 @@
                 <a href="#" class="d-block"><?php echo $type; ?></a>
             </div>
         </div>
-
-
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
@@ -23,7 +21,7 @@
                 </li>
                 <?php if ($type == "admin") { ?>
                     <li class="nav-item">
-                        <a href="?page=add" class="nav-link">
+                        <a href="?page=update" class="nav-link">
                             <img src="<?php echo $package; ?>" alt="" srcset="" width="30" height="30">
                             <p>
                                 &emsp;จัดการวัสดุ-ครุภัณฑ์
@@ -31,14 +29,16 @@
                         </a>
                     </li>
                 <?php } ?>
-                <li class="nav-item">
-                    <a href="?page=add" class="nav-link">
-                        <img src="<?php echo $package; ?>" alt="" srcset="" width="30" height="30">
-                        <p>
-                            &emsp;เบิก
-                        </p>
-                    </a>
-                </li>
+                <?php if ($type == "user") { ?>
+                    <li class="nav-item">
+                        <a href="?page=add" class="nav-link">
+                            <img src="<?php echo $package; ?>" alt="" srcset="" width="30" height="30">
+                            <p>
+                                &emsp;เบิก
+                            </p>
+                        </a>
+                    </li>
+                <?php } ?>
                 <li class="nav-header">Setting</li>
                 <li class="nav-item">
                     <a href="pages/login.php" class="nav-link">

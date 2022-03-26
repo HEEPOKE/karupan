@@ -36,6 +36,9 @@ $type = $_SESSION['type'];
                 case 'add':
                     include 'pages/addPackage.php';
                     break;
+                case 'update':
+                    include 'pages/updatepackage.php';
+                    break;
             }
             ?>
         </div>
