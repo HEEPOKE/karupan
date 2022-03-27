@@ -13,9 +13,10 @@
                             <th>รหัสวัสดุ-ครุภัณฑ์</th>
                             <th>ชื่อวัสดุ-ครุภัณฑ์</th>
                             <th>ชื่อ-นามสกุล</th>
+                            <th>เบอร์โทร</th>
                             <th>วันที่เบิก/ยืม</th>
                             <th>จำนวน</th>
-                            <th>สถานะ</th>
+                            <th>สถานะการเบิก/ยืม</th>
                             <th>ราคา</th>
                             <th>หมายเหตุ</th>
                             <?php if ($type != "admin") { ?>
@@ -40,6 +41,7 @@
                                     <td><?php echo $rowHistory["itemscode"]; ?></td>
                                     <td><?php echo $rowHistory["packagename"]; ?></td>
                                     <td><?php echo $rowHistory["name"] . '  ' . $rowHistory["lastname"]; ?></td>
+                                    <td><?php echo $rowHistory["tel"]; ?></td>
                                     <td><?php echo $rowHistory["date"]; ?></td>
                                     <td><?php echo $rowHistory["number"]; ?></td>
                                     <td><?php echo $rowHistory["status"]; ?></td>

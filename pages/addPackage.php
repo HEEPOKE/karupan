@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card">
                 <div class="card-header bg-primary">
-                    <h3 class="card-title">เบิกวัสดุ - ครุภัณฑ์</h3>
+                    <h3 class="card-title">รายการวัสดุ - ครุภัณฑ์</h3>
                 </div>
                 <div class="card-body">
                     <table id="historyone" class="table table-bordered table-striped text-center">
@@ -13,7 +13,7 @@
                                 <th>ชื่อวัสดุ-ครุภัณฑ์</th>
                                 <th>จำนวน</th>
                                 <th>ราคา</th>
-                                <th>ยืม</th>
+                                <th>เบิก/ยืม</th>
                             </tr>
                         </thead>
                         <tbody>
