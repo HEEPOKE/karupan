@@ -15,7 +15,7 @@ session_destroy();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="../login/css/style.css">
-
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 
 <body class="img js-fullheight" style="background-image: url(../assets/image/bg1.jpg);">
