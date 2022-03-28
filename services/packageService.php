@@ -18,7 +18,7 @@ if ($resultEdit->num_rows > 0) {
         echo "Error: " . $query . "<br>" . $conn->error;
     }
 } else {
-    $query = "INSERT INTO package(idpackage, packagename1, price, number) 
+    $query = "INSERT INTO package(idpackage2, packagename1, price, number) 
     VALUES ('$idpackage','$packagename','$price','$number')";
 
     if ($conn->query($query) === TRUE) {

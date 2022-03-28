@@ -61,7 +61,7 @@
                         ?>
                                 <tr>
                                     <td><?php echo $i; ?></td>
-                                    <td><?php echo $rowHistory["idpackage"]; ?></td>
+                                    <td><?php echo $rowHistory["idpackage2"]; ?></td>
                                     <td><?php echo $rowHistory["packagename1"]; ?></td>
                                     <td><?php echo $rowHistory["number"]; ?></td>
                                     <td><?php echo $rowHistory["price"]; ?></td>
