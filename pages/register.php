@@ -24,13 +24,12 @@ session_destroy();
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center mb-5">
-                    <h1 class="heading-section">Login</h1>
+                    <h1 class="heading-section">Register</h1>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap p-0">
-                        <h3 class="mb-4 text-center">Have an account?</h3>
                         <form action="../services/registerservices.php" method="POST" class="signin-form">
                             <div class="form-group">
                                 <input type="text" class="form-control" name="name" placeholder="Name" required>
@@ -47,13 +46,6 @@ session_destroy();
                             <div class="form-group">
                                 <input id="password-field" type="password" class="form-control" name="passwords" placeholder="Password" required>
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                            </div>
-                            <div class="form-group">
-                                <input id="confirm-password-field" type="password" class="form-control" name="confirmpassword" placeholder="Confirm password" required>
-                                <span toggle="#confirm-password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="email" placeholder="Email" required>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="tel" placeholder="Tel" required>
