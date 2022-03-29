@@ -2,12 +2,21 @@
 session_start();
 require('../database/clinet.php');
 
-if (count($_POST) > 0) {
-    $result = mysqli_query($conn, "SELECT *FROM account WHERE username='" . $_SESSION["username"] . "'");
-    $row = mysqli_fetch_array($result);
-    if ($_POST["newpassword"] == $row["password"]) {
-        mysqli_query($conn, "UPDATE username set password='" . $_POST["newpassword"] . "' WHERE userId='" . $_SESSION["username"] . "'");
-        $message = "เปลี่ยนรหัสผ่่านเรียบร้อยแล้ว";
-    } else
-        $message = "กรอกรหัสผ่านใหม่ไม่ถูกต้อง";
+$username = $_POST['username'];
+$password = $_POST['password'];
+$newpassword = $_POST['newpassword'];
+$confirmnewpassword = $_POST['confirmnewpassword'];
+
+$sql = "UPDATE `account` 
+SET `username`='$username',
+`password`='$password',
+`newpassword`='$newpassword',
+`confirmnewpassword`='$confirmnewpassword',
+WHERE `password`='" . $_SESSION["usernames"] . "' AND `username`='" . $_SESSION["passwords"] . "'";
+
+
+if ($conn->query($query) == TRUE) {
+    echo '<script>alert("เปลี่ยนรหัสผ่านสำเร็จ")</script>';
+} else {
+    echo '<script>alert("กรอกรหัสผ่านไม่ตรงกัน")</script>';
 }
