@@ -36,7 +36,7 @@ session_destroy();
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
                             <div class="form-group">
-                                <input id="confirm-newpassword-field" type="password" class="form-control" name="confirmpnewpassword" placeholder="Confirm New password" required>
+                                <input id="confirm-newpassword-field" type="password" class="form-control" name="confirmpnewpassword" placeholder="Confirm Password" required>
                                 <span toggle="#confirm-password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
                             <div class="form-group">
