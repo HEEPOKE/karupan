@@ -30,7 +30,10 @@ session_destroy();
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap p-0">
-                        <form action="../services/changepasswordservice.php" method="POST" class="signin-form">
+                        <form action="../services/changepasswordService.php" method="POST" class="signin-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="username" placeholder="Username" required>
+                            </div>
                             <div class="form-group">
                                 <input id="newpassword" type="password" class="form-control" name="newpassword" placeholder="New Password" required>
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
