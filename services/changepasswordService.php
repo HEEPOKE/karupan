@@ -3,7 +3,6 @@ session_start();
 require('../database/clinet.php');
 
 $username = $_POST['username'];
-$password = $_POST['password'];
 $newpassword = $_POST['newpassword'];
 $confirmnewpassword = $_POST['confirmnewpassword'];
 
