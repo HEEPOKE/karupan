@@ -41,9 +41,6 @@ session_destroy();
                                 <input type="text" class="form-control" name="lastname" placeholder="Lastname" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="idstudent" placeholder="Idstudent" required>
-                            </div>
-                            <div class="form-group">
                                 <input id="password-field" type="password" class="form-control" name="passwords" placeholder="Password" required>
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
