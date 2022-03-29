@@ -2,20 +2,12 @@
 session_start();
 require('../database/clinet.php');
 
-$id = $_POST["hidden-namepackage"];
-$number = $_POST["ordering"];
-$note = $_POST["note"];
-
-$queryGet = "SELECT * FROM package WHERE packagename1= '$id'";
-$result = $conn->query($queryGet);
-$row = $result->fetch_assoc();
-$sum = $row["number"] - 2;
-
-$query = "UPDATE `package` 
-        SET `number`='$sum' 
-        WHERE packagename1 = '$id'";
-
-$queryGetAccount = "SELECT * FROM account 
-WHERE username = '" . $_SESSION["usernames"] . "' AND `password` = '" . $_SESSION["passwords"] . "'";
-$resultGetAccount = $conn->query($queryGetAccount);
-$rowGetAccount = $resultGetAccount->fetch_assoc();
+if (count($_POST) > 0) {
+    $result = mysqli_query($conn, "SELECT *from account WHERE username='" . $_SESSION["username"] . "'");
+    $row = mysqli_fetch_array($result);
+    if ($_POST["newpassword"] == $row["password"]) {
+        mysqli_query($conn, "UPDATE username set password='" . $_POST["newpassword"] . "' WHERE userId='" . $_SESSION["username"] . "'");
+        $message = "เปลี่ยนรหัสผ่่านเรียบร้อยแล้ว";
+    } else
+        $message = "กรอกรหัสผ่านใหม่ไม่ถูกต้อง";
+}

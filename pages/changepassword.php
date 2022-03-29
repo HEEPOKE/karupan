@@ -32,11 +32,11 @@ session_destroy();
                     <div class="login-wrap p-0">
                         <form action="../services/changepasswordservice.php" method="POST" class="signin-form">
                             <div class="form-group">
-                                <input id="newpassword-field" type="password" class="form-control" name="newpassword" placeholder="New Password" required>
+                                <input id="newpassword" type="password" class="form-control" name="newpassword" placeholder="New Password" required>
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
                             <div class="form-group">
-                                <input id="confirm-newpassword-field" type="password" class="form-control" name="confirmpnewpassword" placeholder="Confirm Password" required>
+                                <input id="confirmnewpassword" type="password" class="form-control" name="confirmnewpassword" placeholder="Confirm Password" required>
                                 <span toggle="#confirm-password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
                             <div class="form-group">
