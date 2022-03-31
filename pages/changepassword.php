@@ -35,10 +35,10 @@ session_destroy();
                                 <input type="email" class="form-control" name="email" placeholder="Email" required>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control btn btn-primary submit px-3">Send</button>
+                                <button type="submit" class="form-control btn btn-primary submit px-3">SEND</button>
                             </div>
                             <div class="form-group">
-                                <button type="submit" onclick="history.back();" class="form-control btn btn-primary submit px-3">Back</button>
+                                <button type="submit" onclick="history.back();" class="form-control btn btn-primary submit px-3">BACK</button>
                             </div>
                         </form>
                     </div>

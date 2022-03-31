@@ -2,17 +2,14 @@
 session_start();
 require('../database/clinet.php');
 
-$username = $_POST['username'];
+$email = $_POST['email'];
 
 
-$sql = "UPDATE `account` 
--- SET `username`='$username',
--- `password`='$password',
-WHERE `username`='" . $_SESSION["usernames"] . "' AND `username`='" . $_SESSION["passwords"] . "'";
-
+$sql = "SELECT *  FROM  account WHERE  email =  $email";
+$result = $conn->query($sql);
 
 if ($conn->query($query) == TRUE) {
-    echo '$sql';
+    echo $result;
 } else {
     echo '<script>alert("รหัสผ่านไม่ตรงกัน")</script>';
 }
