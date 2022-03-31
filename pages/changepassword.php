@@ -32,18 +32,10 @@ session_destroy();
                     <div class="login-wrap p-0">
                         <form action="../services/changepasswordService.php" method="POST" class="signin-form">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="username" placeholder="Username" required>
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
                             </div>
                             <div class="form-group">
-                                <input id="newpassword" type="password" class="form-control" name="newpassword" placeholder="New Password" required>
-                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                            </div>
-                            <div class="form-group">
-                                <input id="confirmnewpassword" type="password" class="form-control" name="confirmnewpassword" placeholder="Confirm Password" required>
-                                <span toggle="#confirm-password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="form-control btn btn-primary submit px-3">Confirm</button>
+                                <button type="submit" class="form-control btn btn-primary submit px-3">Send</button>
                             </div>
                             <div class="form-group">
                                 <button type="submit" onclick="history.back();" class="form-control btn btn-primary submit px-3">Back</button>
