@@ -30,21 +30,20 @@ session_destroy();
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap p-0">
-                        <form action="../services/changepasswordService.php" method="POST" class="signin-form">
+                        <form action="../services/sendemaildService.php" method="POST" class="signin-form">
                             <div class="form-group">
-                                <input id="password-field" type="password" class="form-control" name="newpassword" placeholder="NEWPASSWORD" required>
-                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
                             </div>
                             <div class="form-group">
-                                <input id="password-field" type="password" class="form-control" name="confirmnewpassword" placeholder="CONFIRMNEWPASSWORD" required>
-                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                <button type="submit" class="form-control btn btn-primary submit px-3">SEND</button>
                             </div>
-                            <button type="submit" class="form-control btn btn-primary submit px-3">CONFIRM</button>
+                            <div class="form-group">
+                                <button type="submit" onclick="history.back();" class="form-control btn btn-primary submit px-3">BACK</button>
+                            </div>
+                        </form>
                     </div>
-                    </form>
                 </div>
             </div>
-        </div>
         </div>
         </div>
     </section>
