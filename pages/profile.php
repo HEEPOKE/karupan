@@ -3,16 +3,10 @@ $queryAccount = "SELECT * FROM account WHERE username = '" . $usernames . "' AND
 $resultAccount = $conn->query($queryAccount);
 $name = "";
 $lastname = "";
-$idstudent = "";
-$tel = "";
-$email = "";
 if ($resultAccount->num_rows > 0) {
     $rowAccount = $resultAccount->fetch_assoc();
     $name = $rowAccount["name"];
     $lastname = $rowAccount["lastname"];
-    $idstudent = $rowAccount["idstudent"];
-    $tel = $rowAccount["tel"];
-    $email = $rowAccount["email"];
 }
 ?>
 <div class="col-md-12">
@@ -33,18 +27,6 @@ if ($resultAccount->num_rows > 0) {
                         <div class="form-group">
                             <label for="inputlastname">นามสกุล</label>
                             <input type="text" name="lastname" value="<?php echo $lastname; ?>" class="form-control" id="inputlastname" placeholder="กรอกนามสกุล">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputidstudent">รหัสนักศึกษา</label>
-                            <input type="text" name="idstudent" value="<?php echo $idstudent; ?>" class="form-control" id="inputidstudent" placeholder=" กรอกรหัสนักศึกษา">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputtel">เบอร์โทร</label>
-                            <input type="text" name="tel" value="<?php echo $tel; ?>" class="form-control" id="inputtel" placeholder="กรอกเบอร์โทร">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputEmail">อีเมล์</label>
-                            <input type="email" name="email" value="<?php echo $email; ?>" class="form-control" id="inputEmail" placeholder="กรอกอีเมล์">
                         </div>
                     </div>
                     <div class="form-group text-center ">

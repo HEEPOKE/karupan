@@ -20,7 +20,7 @@
                             <label for="packagename">ชื่อวัสดุ-ครุภัณฑ์</label>
                             <input type="text" class="form-control" name="packagename" id="packagenames" placeholder="กรอกชื่อวัสดุ-ครุภัณฑ์" required>
                         </div>
-                        <div class="form-group">
+                        <div class=" form-group">
                             <label for="number">จำนวน</label>
                             <input type="number" class="form-control" name="number" id="numbers" placeholder="กรอกจำนวนวัสดุ-ครุภัณฑ์" required>
                         </div>
