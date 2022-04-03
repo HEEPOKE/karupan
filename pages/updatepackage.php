@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-header bg-secondary">
-                <h3 class="card-title">เพิ่มข้อมูลวัสดุ-ครุภัณฑ์</h3>
+                <h3 class="card-title">เพิ่ม-เเก้ไขข้อมูลวัสดุ-ครุภัณฑ์</h3>
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse">
                         <i class="fas fa-minus"></i>
@@ -14,7 +14,7 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for="idpackage">รหัสวัสดุ-ครุภัณฑ์</label>
-                            <input type="text" class="form-control" name="idpackage" id="idpackage" placeholder="กรอกรหัสวัส-ครุภัณฑ์" required>
+                            <input type="text" class="form-control" name="idpackage" id="idpackage" placeholder="กรอกรหัสวัส-ครุภัณฑ์" value="<?php echo rand(100000, 999999) . 'ID'; ?>" readonly required>
                         </div>
                         <div class="form-group">
                             <label for="packagename">ชื่อวัสดุ-ครุภัณฑ์</label>
