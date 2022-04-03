@@ -40,7 +40,7 @@ $queryHistory = "INSERT INTO
 '" . $id . "',
 '" . $date . "',
 '" . $number . "',
-'กำลังยืม',
+'ยืมอยู่',
 '" . $row["price"] . "',
 '" . $note . "')";
 
