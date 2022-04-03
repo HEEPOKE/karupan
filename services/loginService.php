@@ -11,7 +11,6 @@ if ($result->num_rows > 0) {
     $_SESSION['name'] = $row['name'];
     $_SESSION["usernames"] = $row['username'];
     $_SESSION["passwords"] = $row['password'];
-    $_SESSION['lastname'] = $row['lastname'];
     header('Location: ../');
 } else {
     echo '<script>alert("ชื่อผู้ใช้งานหรือรหัสผ่านไม่ถูกต้อง");window.location.href = "../pages/login.php";</script>';
