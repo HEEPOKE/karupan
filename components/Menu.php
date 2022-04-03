@@ -29,7 +29,7 @@
                         </a>
                     </li>
                 <?php } ?>
-                <?php if ($type == "user") { ?>
+                <?php if ($type == "admin") { ?>
                     <li class="nav-item">
                         <a href="?page=add" class="nav-link">
                             <img src="<?php echo $package; ?>" alt="" srcset="" width="30" height="30">
@@ -38,7 +38,7 @@
                             </p>
                         </a>
                     </li>
-                <?php } ?>
+                    <!--<?php } ?>
                 <li class="nav-header">Setting</li>
                 <?php if ($type == "admin") { ?>
                     <li class="nav-item">
@@ -47,13 +47,13 @@
                             <p>&emsp;เพิ่มเเละจัดการผู้ใช้</p>
                         </a>
                     </li>
-                <?php } ?>
-                <li class="nav-item">
-                    <a href="pages/login.php" class="nav-link">
-                        <img src="<?php echo $logout; ?>" width="30" height="30">
-                        <p>&emsp;logout</p>
-                    </a>
-                </li>
+                <?php } ?>-->
+                    <li class="nav-item">
+                        <a href="pages/login.php" class="nav-link">
+                            <img src="<?php echo $logout; ?>" width="30" height="30">
+                            <p>&emsp;logout</p>
+                        </a>
+                    </li>
             </ul>
         </nav>
     </div>
