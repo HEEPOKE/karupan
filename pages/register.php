@@ -32,26 +32,16 @@ session_destroy();
                     <div class="login-wrap p-0">
                         <form action="../services/registerservices.php" method="POST" class="signin-form">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="name" placeholder="Name" required>
-                            </div>
-                            <div class="form-group">
                                 <input type="text" class="form-control" name="usernames" placeholder="Username" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="lastname" placeholder="Lastname" required>
-                            </div>
-                            <div class="form-group">
                                 <input id="password-field" type="password" class="form-control" name="passwords" placeholder="Password" required>
-                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="tel" placeholder="Tel" required>
+                                <input id="password-field" type="password" class="form-control" name="confirmpassword" placeholder="Confirmpassword" required>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="form-control btn btn-primary submit px-3">Register</button>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" onclick="history.back();" class="form-control btn btn-primary submit px-3">Back</button>
                             </div>
                         </form>
                     </div>

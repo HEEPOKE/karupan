@@ -1,17 +1,15 @@
 <?php
 
-$name = $_POST['name'];
 $usernames = $_POST['usernames'];
-$lastname = $_POST['lastname'];
 $passwords = $_POST['passwords'];
 $confirmpassword = $_POST['confirmpassword'];
-$tel = $_POST['tel'];
+
 
 
 if ($passwords == $confirmpassword) {
     require('../database/clinet.php');
-    $sql = "INSERT INTO account (name, lastname,username, password, type, tel) 
-    VALUES ('$name', '$lastname', '$usernames', '$passwords', 'user', '$tel')";
+    $sql = "INSERT INTO account (username, password, type) 
+    VALUES ('$usernames', '$passwords', 'user')";
     if ($conn->query($sql) === TRUE) {
         echo '<script>alert("สมัครสมาชิกสำเร็จ");window.location.href = "../pages/login.php";</script>';
     } else {

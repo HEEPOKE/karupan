@@ -40,6 +40,14 @@
                     </li>
                 <?php } ?>
                 <li class="nav-header">Setting</li>
+                <?php if ($type == "admin") { ?>
+                    <li class="nav-item">
+                        <a href="pages/register.php" class="nav-link" onclick="window.open('pages/register.php', '_blank'); return false;">
+                            <img src="<?php echo $edit; ?>" width="30" height="30">
+                            <p>&emsp;เพิ่มเเละจัดการผู้ใช้</p>
+                        </a>
+                    </li>
+                <?php } ?>
                 <li class="nav-item">
                     <a href="pages/login.php" class="nav-link">
                         <img src="<?php echo $logout; ?>" width="30" height="30">

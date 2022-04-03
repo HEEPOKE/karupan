@@ -48,15 +48,8 @@ session_destroy();
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
-                                <div class="w-50 text-md-right">
-                                    <a href="changepassword.php" style="color: #fff">Forgot Password</a>
-                                </div>
                             </div>
                         </form>
-                        <p class="w-100 text-center">&mdash; Or Register &mdash;</p>
-                        <div class="social d-flex text-center">
-                            <a href="register.php" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span>Register</a>
-                        </div>
                     </div>
                 </div>
             </div>
