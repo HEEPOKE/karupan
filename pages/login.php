@@ -39,7 +39,7 @@ session_destroy();
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control btn btn-primary submit px-3">SUBMIT</button>
+                                <button type="submit" class="form-control btn btn-primary submit px-3">Login</button>
                             </div>
                             <div class="form-group d-md-flex">
                                 <div class="w-50">
