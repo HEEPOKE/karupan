@@ -11,7 +11,7 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-2 mt-4">
-                            <p class="h5 mt-1">ผู้เบิก</p>
+                            <p class="h5 mt-1">ชื่อผู้เบิก</p>
                         </div>
                         <div class="col-10 mt-3">
                             <input type="text" class="form-control" name="name" required>
