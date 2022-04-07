@@ -34,7 +34,7 @@
                         <a href="?page=add" class="nav-link">
                             <img src="<?php echo $package; ?>" alt="" srcset="" width="30" height="30">
                             <p>
-                                &emsp;เบิก
+                                &emsp;เบิก/ยืมวัสดุ-ครุภัณฑ์
                             </p>
                         </a>
                     </li>
