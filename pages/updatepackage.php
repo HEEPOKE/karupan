@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-header bg-secondary">
-                <h3 class="card-title">เพิ่ม-เเก้ไขข้อมูลวัสดุ-ครุภัณฑ์</h3>
+                <h3 class="card-title">เพิ่ม/เเก้ไขข้อมูลวัสดุ-ครุภัณฑ์</h3>
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse">
                         <i class="fas fa-minus"></i>
