@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="btn btn-secondary col-6">บันทึก</button>
+                        <button type="submit" class="btn btn-secondary col-6">เพิ่ม</button>
                     </div>
                 </form>
             </div>
