@@ -5,6 +5,8 @@ require('../database/clinet.php');
 $id = $_POST["hidden-namepackage"];
 $number = $_POST["ordering"];
 $note = $_POST["note"];
+$peoplename = $_POST["peoplename"];
+$peoplelastname = $_POST["peoplelastname"];
 
 $queryGet = "SELECT * FROM package WHERE packagename1= '$id'";
 $result = $conn->query($queryGet);
@@ -35,8 +37,8 @@ $queryHistory = "INSERT INTO
 `price`, 
 `note`) VALUES (
 '" . $row["idpackage"] . "',
-'" . $rowGetAccount["name"] . "',
-'" . $rowGetAccount["lastname"] . "',
+'" . $peoplename . "',
+'" . $peoplelastname . "',
 '" . $id . "',
 '" . $date . "',
 '" . $number . "',

@@ -10,24 +10,18 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-2 mt-4">
-                            <p class="h5 mt-1">ผู้เบิก</p>
+                        <div class="col-12 mt-3">
+                            <input type="text" class="form-control" name="peoplename" placeholder="ชื่อผู้เบิก" required>
                         </div>
-                        <div class="col-10 mt-3">
-                            <input type="text" class="form-control" name="name" required>
+                        <div class="col-12 mt-3">
+                            <input type="text" class="form-control" name="peoplelastname" placeholder="นามสกุลผู้เบิก" required>
                         </div>
-                        <div class="col-2">
-                            <p class="h5 mt-1">จำนวน</p>
-                        </div>
-                        <div class="col-10">
+                        <div class="col-12 mt-3">
                             <input type="text" id="hidden-namepackage" name="hidden-namepackage" style="display: none" />
-                            <input type="number" class="form-control" name="ordering" required>
+                            <input type="number" class="form-control" name="ordering" placeholder="จำนวน" required>
                         </div>
-                        <div class="col-2 mt-3">
-                            <p class="h5 mt-1">หมายเหตุ</p>
-                        </div>
-                        <div class="col-10 mt-3">
-                            <input type="text" class="form-control" name="note" required>
+                        <div class="col-12 mt-3">
+                            <input type="text" class="form-control" name="note" placeholder="หมายเหตุ" required>
                         </div>
                     </div>
                 </div>
